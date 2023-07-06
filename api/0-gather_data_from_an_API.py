@@ -2,8 +2,9 @@
 from sys import argv
 import requests
 
+'''function returns todo info an employee using id from API'''
+
 def todo_progress(employee_id):
-    '''function returns todo info an employee using id from API'''
     base_url = "https://jsonplaceholder.typicode.com"
     todo_endpoint = f"{base_url}/todos"
     user_endpoint = f"{base_url}/users/{employee_id}"
