@@ -2,7 +2,9 @@
 from sys import argv
 import requests
 
-'''function returns todo info an employee using id from API'''
+'''
+python3 -c 'print(__import__("my_module").__doc__)'
+'''
 
 def todo_progress(employee_id):
     base_url = "https://jsonplaceholder.typicode.com"
