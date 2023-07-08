@@ -11,8 +11,8 @@ from sys import argv
 def todo_progress(employee_id):
     '''get data from rest api'''
     base_url = "https://jsonplaceholder.typicode.com"
-    todo_endpoint = f"{base_url}/todos"
     user_endpoint = f"{base_url}/users/{employee_id}"
+    todo_endpoint = f"{base_url}/todos"
 
     try:
         user_response = requests.get(user_endpoint)
