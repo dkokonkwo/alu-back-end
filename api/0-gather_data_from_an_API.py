@@ -3,8 +3,9 @@
 function returns todo info an employee using id from API
 '''
 
-from sys import argv
+
 import requests
+from sys import argv
 
 
 def todo_progress(employee_id):
