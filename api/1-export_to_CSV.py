@@ -44,8 +44,12 @@ def todo_progress(employee_id):
         with open(f"{employee_id}.csv", 'w', newline='') as csvfile:
             writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
             for todo in all_todos:
-                fresh_line = [employee_id, user["username"],
-                                todo["completed"], todo["title"]]
+                fresh_line = [
+                    employee_id, 
+                    user["username"], 
+                    todo["completed"], 
+                    todo["title"]
+                ]
                 writer.writerow(fresh_line)
 
     except requests.exceptions.RequestException as e:
