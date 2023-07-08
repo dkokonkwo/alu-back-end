@@ -38,7 +38,7 @@ def todo_progress(employee_id):
                 print("\t " + each["title"])
 
     except requests.exceptions.RequestException as e:
-        print(f"An error occured: {e}")
+        print("An error occured: {}".format(e))
 
 if __name__ == '__main__':
     id = argv[1]
