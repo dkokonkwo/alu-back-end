@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-function exports to json format todo 
+function exports to json format todo
 info of all employees using id from API
 '''
 
@@ -31,20 +31,20 @@ def todo_progress():
         total_tasks = len(all_todos)
         total_completed = len(completed_tasks)
 
-        # print(f"Employee {employee_name} 
+        # print(f"Employee {employee_name}
         # is done with tasks({total_completed}/{total_tasks}):")
         # for each in all_todos:
         #     print("\t " + each["title"])
 
-        # { "USER_ID": 
-        # [ {"username": "USERNAME", "task": "TASK_TITLE", 
-        #      "completed": TASK_COMPLETED_STATUS}, 
-        #   {"username": "USERNAME", "task": "TASK_TITLE", 
-        #      "completed": TASK_COMPLETED_STATUS}, ... ], 
-        #   "USER_ID": 
-        # [ {"username": "USERNAME", "task": "TASK_TITLE", 
-        #     "completed": TASK_COMPLETED_STATUS}, 
-        #   {"username": "USERNAME", "task": "TASK_TITLE", 
+        # { "USER_ID":
+        # [ {"username": "USERNAME", "task": "TASK_TITLE",
+        #      "completed": TASK_COMPLETED_STATUS},
+        #   {"username": "USERNAME", "task": "TASK_TITLE",
+        #      "completed": TASK_COMPLETED_STATUS}, ... ],
+        #   "USER_ID":
+        # [ {"username": "USERNAME", "task": "TASK_TITLE",
+        #     "completed": TASK_COMPLETED_STATUS},
+        #   {"username": "USERNAME", "task": "TASK_TITLE",
         #     "completed": TASK_COMPLETED_STATUS}, ... ]}
 
         data_2 = {}
