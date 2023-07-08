@@ -30,8 +30,9 @@ def todo_progress(employee_id):
         total_tasks = len(all_todos)
         total_completed = len(completed_tasks)
 
-        print(f"Employee {employee_name} is done with",
-            f"tasks({total_completed}/{total_tasks}):")
+        print("Employee {} is done with tasks({}/{}):".format(
+            employee_name, total_completed, total_tasks
+        ))
         for each in all_todos:
             if each["completed"]:
                 print("\t " + each["title"])
