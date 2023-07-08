@@ -4,9 +4,11 @@ function exports to json format todo
 info an employee using id from API
 '''
 
-from sys import argv
+
 import json
 import requests
+from sys import argv
+
 
 def todo_progress(employee_id):
     '''export in json format'''
@@ -55,7 +57,6 @@ def todo_progress(employee_id):
         # Export to JSON
         with open(f"{employee_id}.json", "w") as json_file:
             json.dump(data, json_file, indent=4)
-
 
     except requests.exceptions.RequestException as e:
         print(f"An error occured: {e}")
