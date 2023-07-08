@@ -15,7 +15,7 @@ def todo_progress(employee_id):
 
     try:
         user_response = requests.get(user_endpoint)
-        user_response.raise_for_status()  
+        user_response.raise_for_status()
         # above raises exception for unsuccessful request
         user = user_response.json()
 
@@ -37,8 +37,6 @@ def todo_progress(employee_id):
 
     except requests.exceptions.RequestException as e:
         print(f"An error occured: {e}")
-
-
 
 if __name__ == '__main__':
     id = argv[1]
