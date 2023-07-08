@@ -45,9 +45,9 @@ def todo_progress(employee_id):
             writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
             for todo in all_todos:
                 fresh_line = [
-                    employee_id, 
-                    user["username"], 
-                    todo["completed"], 
+                    employee_id,
+                    user["username"],
+                    todo["completed"],
                     todo["title"]
                 ]
                 writer.writerow(fresh_line)
