@@ -7,12 +7,11 @@ function returns todo info an employee using id from API
 import requests
 from sys import argv
 
-
 def todo_progress(employee_id):
     '''get data from rest api'''
     base_url = "https://jsonplaceholder.typicode.com"
-    user_endpoint = f"{base_url}/users/{employee_id}"
     todo_endpoint = f"{base_url}/todos"
+    user_endpoint = f"{base_url}/users/{employee_id}"
 
     try:
         user_response = requests.get(user_endpoint)
