@@ -7,6 +7,7 @@ function returns todo info an employee using id from API
 import requests
 from sys import argv
 
+
 def todo_progress(employee_id):
     '''get data from rest api'''
     base_url = "https://jsonplaceholder.typicode.com"
