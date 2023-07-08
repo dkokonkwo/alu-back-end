@@ -33,7 +33,7 @@ def todo_progress(employee_id):
         total_tasks = len(all_todos)
         total_completed = len(completed_tasks)
 
-        # print(f"Employee {employee_name} 
+        # print(f"Employee {employee_name}
         # is done with tasks({total_completed}/{total_tasks}):")
         # for each in all_todos:
         #     print("\t " + each["title"])
@@ -44,8 +44,8 @@ def todo_progress(employee_id):
         with open(f"{employee_id}.csv", 'w', newline='') as csvfile:
             writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
             for todo in all_todos:
-                fresh_line = [employee_id, user["username"], \
-                            todo["completed"], todo["title"]]
+                fresh_line = [employee_id, user["username"],
+                                todo["completed"], todo["title"]]
                 writer.writerow(fresh_line)
 
     except requests.exceptions.RequestException as e:
